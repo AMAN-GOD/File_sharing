@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Sharing Platform</title>
+</head>
+<body>
+  <h1>Upload File</h1>
+  <form id="uploadForm">
+    <input type="file" id="fileInput" required>
+    <button type="submit">Upload</button>
+  </form>
+
+  <h1>Download File</h1>
+  <form id="downloadForm">
+    <input type="text" id="filenameInput" placeholder="Enter filename" required>
+    <button type="submit">Download</button>
+  </form>
+
+  <script>
+    document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const file = document.getElementById('fileInput').files[0];
+      const formData = new FormData();
+      formData.append('file', file);
+
+      const response = await fetch('/upload', {
+        method: 'POST',
+        body: formData
+      });
+
+      alert(await response.text());
+    });
+
+    document.getElementById('downloadForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const filename = document.getElementById('filenameInput').value;
+      window.location.href = `/download/${filename}`;
+    });
+  </script>
+</body>
+</html>

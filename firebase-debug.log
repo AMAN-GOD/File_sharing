@@ -1,0 +1,273 @@
+[debug] [2025-02-18T17:14:22.225Z] ----------------------------------------------------------------------
+[debug] [2025-02-18T17:14:22.228Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kille\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-02-18T17:14:22.228Z] CLI Version:   13.31.1
+[debug] [2025-02-18T17:14:22.229Z] Platform:      win32
+[debug] [2025-02-18T17:14:22.229Z] Node Version:  v22.14.0
+[debug] [2025-02-18T17:14:22.229Z] Time:          Tue Feb 18 2025 22:44:22 GMT+0530 (India Standard Time)
+[debug] [2025-02-18T17:14:22.229Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-02-18T17:14:22.236Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-18T17:14:22.236Z] > authorizing via signed-in user (killerjaat305@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Codings\Cloud\project
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-02-18T17:15:24.076Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:24.076Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:24.077Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2025-02-18T17:15:25.149Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2025-02-18T17:15:25.150Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project filesharing-d7c31 (Filesharing) 
+[info] 
+=== Dataconnect Setup
+[debug] [2025-02-18T17:15:50.419Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:50.419Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:50.419Z] >>> [apiv2][query] GET https://cloudbilling.googleapis.com/v1/projects/filesharing-d7c31/billingInfo [none]
+[debug] [2025-02-18T17:15:52.225Z] <<< [apiv2][status] GET https://cloudbilling.googleapis.com/v1/projects/filesharing-d7c31/billingInfo 200
+[debug] [2025-02-18T17:15:52.226Z] <<< [apiv2][body] GET https://cloudbilling.googleapis.com/v1/projects/filesharing-d7c31/billingInfo {"name":"projects/filesharing-d7c31/billingInfo","projectId":"filesharing-d7c31","billingAccountName":"billingAccounts/011283-DCBD55-D985B0","billingEnabled":true}
+[info] i  dataconnect: ensuring required API firebasedataconnect.googleapis.com is enabled... 
+[debug] [2025-02-18T17:15:52.228Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:52.228Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:52.228Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-02-18T17:15:52.228Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:15:54.224Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-02-18T17:15:54.225Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API firebasedataconnect.googleapis.com. Enabling now... 
+[debug] [2025-02-18T17:15:54.227Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:54.227Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:15:54.227Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com:enable [none]
+[debug] [2025-02-18T17:15:54.227Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com:enable x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:15:54.730Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com:enable 200
+[debug] [2025-02-18T17:15:54.730Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com:enable [omitted]
+[debug] [2025-02-18T17:16:04.740Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:04.741Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:04.741Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-02-18T17:16:04.741Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:06.891Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-02-18T17:16:06.892Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firebasedataconnect.googleapis.com [omitted]
+[info] +  dataconnect: required API firebasedataconnect.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API sqladmin.googleapis.com is enabled... 
+[debug] [2025-02-18T17:16:06.903Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:06.904Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:06.904Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com [none]
+[debug] [2025-02-18T17:16:06.905Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:07.431Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com 200
+[debug] [2025-02-18T17:16:07.432Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API sqladmin.googleapis.com. Enabling now... 
+[debug] [2025-02-18T17:16:07.433Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:07.433Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:07.433Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com:enable [none]
+[debug] [2025-02-18T17:16:07.433Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com:enable x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:08.976Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com:enable 200
+[debug] [2025-02-18T17:16:08.976Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com:enable [omitted]
+[debug] [2025-02-18T17:16:18.982Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:18.983Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:18.983Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com [none]
+[debug] [2025-02-18T17:16:18.984Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:20.860Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com 200
+[debug] [2025-02-18T17:16:20.861Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/sqladmin.googleapis.com [omitted]
+[info] +  dataconnect: required API sqladmin.googleapis.com is enabled 
+[info] i  dataconnect: ensuring required API compute.googleapis.com is enabled... 
+[debug] [2025-02-18T17:16:20.869Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:20.870Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:20.871Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [none]
+[debug] [2025-02-18T17:16:20.871Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:23.000Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com 200
+[debug] [2025-02-18T17:16:23.001Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [omitted]
+[warn] !  dataconnect: missing required API compute.googleapis.com. Enabling now... 
+[debug] [2025-02-18T17:16:23.008Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:23.008Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:23.009Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com:enable [none]
+[debug] [2025-02-18T17:16:23.009Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com:enable x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:23.742Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com:enable 200
+[debug] [2025-02-18T17:16:23.743Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com:enable [omitted]
+[debug] [2025-02-18T17:16:33.752Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:33.753Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:33.753Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [none]
+[debug] [2025-02-18T17:16:33.753Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:36.023Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com 200
+[debug] [2025-02-18T17:16:36.024Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-02-18T17:16:46.033Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:46.034Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:46.034Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [none]
+[debug] [2025-02-18T17:16:46.034Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:16:48.757Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com 200
+[debug] [2025-02-18T17:16:48.757Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-02-18T17:16:58.768Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:58.769Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:16:58.769Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [none]
+[debug] [2025-02-18T17:16:58.769Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:17:01.415Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com 200
+[debug] [2025-02-18T17:17:01.416Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-02-18T17:17:11.422Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:11.423Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:11.423Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [none]
+[debug] [2025-02-18T17:17:11.423Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:17:13.737Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com 200
+[debug] [2025-02-18T17:17:13.738Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [omitted]
+[info] i  dataconnect: waiting for API compute.googleapis.com to activate... 
+[debug] [2025-02-18T17:17:23.752Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:23.753Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:23.753Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [none]
+[debug] [2025-02-18T17:17:23.753Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:17:26.058Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com 200
+[debug] [2025-02-18T17:17:26.059Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/compute.googleapis.com [omitted]
+[info] +  dataconnect: required API compute.googleapis.com is enabled 
+[debug] [2025-02-18T17:17:26.064Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:26.065Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:26.065Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/filesharing-d7c31/locations/-/services [none]
+[debug] [2025-02-18T17:17:28.264Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/filesharing-d7c31/locations/-/services 200
+[debug] [2025-02-18T17:17:28.265Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/filesharing-d7c31/locations/-/services {}
+[debug] [2025-02-18T17:17:43.114Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:43.114Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:43.114Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/filesharing-d7c31/instances [none]
+[debug] [2025-02-18T17:17:44.104Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/filesharing-d7c31/instances 200
+[debug] [2025-02-18T17:17:44.105Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/filesharing-d7c31/instances {}
+[debug] [2025-02-18T17:17:49.116Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:49.116Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:17:49.116Z] >>> [apiv2][query] GET https://firebasedataconnect.googleapis.com/v1/projects/filesharing-d7c31/locations [none]
+[debug] [2025-02-18T17:17:50.877Z] <<< [apiv2][status] GET https://firebasedataconnect.googleapis.com/v1/projects/filesharing-d7c31/locations 200
+[debug] [2025-02-18T17:17:50.877Z] <<< [apiv2][body] GET https://firebasedataconnect.googleapis.com/v1/projects/filesharing-d7c31/locations {"locations":[{"name":"projects/filesharing-d7c31/locations/asia-east1","locationId":"asia-east1","displayName":"Taiwan"},{"name":"projects/filesharing-d7c31/locations/asia-east2","locationId":"asia-east2","displayName":"Hong Kong"},{"name":"projects/filesharing-d7c31/locations/asia-northeast1","locationId":"asia-northeast1","displayName":"Tokyo"},{"name":"projects/filesharing-d7c31/locations/asia-northeast2","locationId":"asia-northeast2","displayName":"Osaka"},{"name":"projects/filesharing-d7c31/locations/asia-northeast3","locationId":"asia-northeast3","displayName":"Seoul"},{"name":"projects/filesharing-d7c31/locations/asia-south1","locationId":"asia-south1","displayName":"Mumbai"},{"name":"projects/filesharing-d7c31/locations/asia-southeast1","locationId":"asia-southeast1","displayName":"Singapore"},{"name":"projects/filesharing-d7c31/locations/asia-southeast2","locationId":"asia-southeast2","displayName":"Jakarta"},{"name":"projects/filesharing-d7c31/locations/australia-southeast1","locationId":"australia-southeast1","displayName":"Sydney"},{"name":"projects/filesharing-d7c31/locations/australia-southeast2","locationId":"australia-southeast2","displayName":"Melbourne"},{"name":"projects/filesharing-d7c31/locations/europe-central2","locationId":"europe-central2","displayName":"Warsaw"},{"name":"projects/filesharing-d7c31/locations/europe-north1","locationId":"europe-north1","displayName":"Finland"},{"name":"projects/filesharing-d7c31/locations/europe-southwest1","locationId":"europe-southwest1","displayName":"Madrid"},{"name":"projects/filesharing-d7c31/locations/europe-west1","locationId":"europe-west1","displayName":"Belgium"},{"name":"projects/filesharing-d7c31/locations/europe-west2","locationId":"europe-west2","displayName":"London"},{"name":"projects/filesharing-d7c31/locations/europe-west3","locationId":"europe-west3","displayName":"Frankfurt"},{"name":"projects/filesharing-d7c31/locations/europe-west4","locationId":"europe-west4","displayName":"Netherlands"},{"name":"projects/filesharing-d7c31/locations/europe-west6","locationId":"europe-west6","displayName":"Zurich"},{"name":"projects/filesharing-d7c31/locations/europe-west8","locationId":"europe-west8","displayName":"Milan"},{"name":"projects/filesharing-d7c31/locations/europe-west9","locationId":"europe-west9","displayName":"Paris"},{"name":"projects/filesharing-d7c31/locations/me-west1","locationId":"me-west1","displayName":"Tel Aviv"},{"name":"projects/filesharing-d7c31/locations/northamerica-northeast1","locationId":"northamerica-northeast1","displayName":"Montréal"},{"name":"projects/filesharing-d7c31/locations/northamerica-northeast2","locationId":"northamerica-northeast2","displayName":"Toronto"},{"name":"projects/filesharing-d7c31/locations/southamerica-east1","locationId":"southamerica-east1","displayName":"São Paulo"},{"name":"projects/filesharing-d7c31/locations/southamerica-west1","locationId":"southamerica-west1","displayName":"Santiago"},{"name":"projects/filesharing-d7c31/locations/us-central1","locationId":"us-central1","displayName":"Iowa"},{"name":"projects/filesharing-d7c31/locations/us-east1","locationId":"us-east1","displayName":"South Carolina"},{"name":"projects/filesharing-d7c31/locations/us-east4","locationId":"us-east4","displayName":"Northern Virginia"},{"name":"projects/filesharing-d7c31/locations/us-south1","locationId":"us-south1","displayName":"Dallas"},{"name":"projects/filesharing-d7c31/locations/us-west1","locationId":"us-west1","displayName":"Oregon"},{"name":"projects/filesharing-d7c31/locations/us-west2","locationId":"us-west2","displayName":"Los Angeles"},{"name":"projects/filesharing-d7c31/locations/us-west3","locationId":"us-west3","displayName":"Salt Lake City"},{"name":"projects/filesharing-d7c31/locations/us-west4","locationId":"us-west4","displayName":"Las Vegas"}]}
+[debug] [2025-02-18T17:18:07.423Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:07.423Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:07.423Z] >>> [apiv2][query] GET https://sqladmin.googleapis.com/v1/projects/filesharing-d7c31/instances/aman-fdc/databases [none]
+[debug] [2025-02-18T17:18:07.952Z] <<< [apiv2][status] GET https://sqladmin.googleapis.com/v1/projects/filesharing-d7c31/instances/aman-fdc/databases 404
+[debug] [2025-02-18T17:18:07.952Z] <<< [apiv2][body] GET https://sqladmin.googleapis.com/v1/projects/filesharing-d7c31/instances/aman-fdc/databases {"error":{"code":404,"message":"Not Found","errors":[{"message":"Not Found","domain":"global","reason":"notFound"}]}}
+[debug] [2025-02-18T17:18:07.953Z] [dataconnect] Cannot list databases during init: FirebaseError: Request to https://sqladmin.googleapis.com/v1/projects/filesharing-d7c31/instances/aman-fdc/databases had HTTP Error: 404, Not Found
+[info] +  Wrote dataconnect\dataconnect.yaml 
+[info] +  Wrote dataconnect\schema\schema.gql 
+[info] +  Wrote dataconnect\connector\connector.yaml 
+[info] +  Wrote dataconnect\connector\queries.gql 
+[info] +  Wrote dataconnect\connector\mutations.gql 
+[info] i  If you'd like to add the generated SDK to your app your, run firebase init dataconnect:sdk 
+[info] 
+=== Firestore Setup
+[debug] [2025-02-18T17:18:18.295Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:18.295Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:18.295Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firestore.googleapis.com [none]
+[debug] [2025-02-18T17:18:18.295Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firestore.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:18:20.324Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firestore.googleapis.com 200
+[debug] [2025-02-18T17:18:20.324Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/firestore.googleapis.com [omitted]
+[debug] [2025-02-18T17:18:20.325Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:20.325Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:20.325Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/(default) [none]
+[debug] [2025-02-18T17:18:20.585Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/(default) 404
+[debug] [2025-02-18T17:18:20.585Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/(default) {"error":{"code":404,"message":"Project 'filesharing-d7c31' or database '(default)' does not exist.","status":"NOT_FOUND"}}
+[debug] [2025-02-18T17:18:20.586Z] error getting database type:  Request to https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/(default) had HTTP Error: 404, Project 'filesharing-d7c31' or database '(default)' does not exist. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":404,"message":"Project 'filesharing-d7c31' or database '(default)' does not exist.","status":"NOT_FOUND"}},"response":{"statusCode":404}},"exit":1,"message":"Request to https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/(default) had HTTP Error: 404, Project 'filesharing-d7c31' or database '(default)' does not exist.","status":404}
+[info] (default) does not exist in project filesharing-d7c31.
+[debug] [2025-02-18T17:18:20.587Z] database_type: DATABASE_DOES_NOT_EXIST
+[debug] [2025-02-18T17:18:57.247Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:57.247Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:57.247Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase [none]
+[debug] [2025-02-18T17:18:57.488Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase 200
+[debug] [2025-02-18T17:18:57.488Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase {"name":"projects/filesharing-d7c31/databases/amansdatabase","uid":"e2173f15-cb0c-4d5e-bc74-e2695467147e","createTime":"2025-02-18T16:27:53.616955Z","updateTime":"2025-02-18T16:27:53.616955Z","locationId":"asia-south2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-02-18T16:27:53.616955Z","appEngineIntegrationMode":"DISABLED","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","etag":"IKm6sLDdzYsDMLv8p/vRzYsD"}
+[debug] [2025-02-18T17:18:57.488Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-02-18T17:18:57.488Z] database_type: FIRESTORE_NATIVE
+[debug] [2025-02-18T17:18:57.489Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-18T17:18:57.489Z] > authorizing via signed-in user (killerjaat305@gmail.com)
+[debug] [2025-02-18T17:18:57.489Z] [iam] checking project filesharing-d7c31 for permissions ["firebase.projects.get"]
+[debug] [2025-02-18T17:18:57.490Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:57.490Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:18:57.490Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions [none]
+[debug] [2025-02-18T17:18:57.490Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:18:57.490Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-18T17:18:59.014Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions 200
+[debug] [2025-02-18T17:18:59.014Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-02-18T17:19:08.528Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:08.528Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:08.528Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/filesharing-d7c31/releases pageSize=10&pageToken=
+[debug] [2025-02-18T17:19:10.148Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/filesharing-d7c31/releases 200
+[debug] [2025-02-18T17:19:10.148Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/filesharing-d7c31/releases {"releases":[{"name":"projects/filesharing-d7c31/releases/cloud.firestore/amansdatabase","rulesetName":"projects/filesharing-d7c31/rulesets/9dcd7c57-b689-425c-8ffa-bcad7ff3e37f","createTime":"2025-02-18T16:27:59.261751Z","updateTime":"2025-02-18T16:27:59.261751Z"},{"name":"projects/filesharing-d7c31/releases/firebase.storage/filesharing-d7c31.firebasestorage.app","rulesetName":"projects/filesharing-d7c31/rulesets/e9fedd88-556b-4ca6-903c-16d8ce402318","createTime":"2025-02-18T16:26:30.910464Z","updateTime":"2025-02-18T16:26:30.910464Z"}]}
+[debug] [2025-02-18T17:19:10.149Z] Found ruleset: projects/filesharing-d7c31/rulesets/9dcd7c57-b689-425c-8ffa-bcad7ff3e37f
+[debug] [2025-02-18T17:19:10.149Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:10.149Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:10.149Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/filesharing-d7c31/rulesets/9dcd7c57-b689-425c-8ffa-bcad7ff3e37f [none]
+[debug] [2025-02-18T17:19:11.474Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/filesharing-d7c31/rulesets/9dcd7c57-b689-425c-8ffa-bcad7ff3e37f 200
+[debug] [2025-02-18T17:19:11.474Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/filesharing-d7c31/rulesets/9dcd7c57-b689-425c-8ffa-bcad7ff3e37f [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2025-02-18T17:19:17.648Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:17.648Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:17.648Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:17.648Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:17.649Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase/collectionGroups/-/indexes [none]
+[debug] [2025-02-18T17:19:17.650Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2025-02-18T17:19:17.882Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase/collectionGroups/-/indexes 200
+[debug] [2025-02-18T17:19:17.883Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase/collectionGroups/-/indexes {}
+[debug] [2025-02-18T17:19:18.041Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2025-02-18T17:19:18.041Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/filesharing-d7c31/databases/amansdatabase/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/filesharing-d7c31/databases/amansdatabase/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Genkit Setup
+[debug] [2025-02-18T17:19:24.962Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-02-18T17:19:24.962Z] > authorizing via signed-in user (killerjaat305@gmail.com)
+[debug] [2025-02-18T17:19:24.962Z] [iam] checking project filesharing-d7c31 for permissions ["firebase.projects.get"]
+[debug] [2025-02-18T17:19:24.962Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:24.962Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:24.962Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions [none]
+[debug] [2025-02-18T17:19:24.962Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:19:24.962Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-18T17:19:26.484Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions 200
+[debug] [2025-02-18T17:19:26.484Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/filesharing-d7c31:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-02-18T17:19:26.484Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:26.485Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:26.485Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:26.485Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:26.485Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-02-18T17:19:26.485Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:19:26.488Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/runtimeconfig.googleapis.com [none]
+[debug] [2025-02-18T17:19:26.489Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:19:28.356Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/runtimeconfig.googleapis.com 200
+[debug] [2025-02-18T17:19:28.357Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2025-02-18T17:19:28.375Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com 200
+[debug] [2025-02-18T17:19:28.376Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2025-02-18T17:19:28.376Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:28.376Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:28.376Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2025-02-18T17:19:28.376Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:19:28.976Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2025-02-18T17:19:28.976Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2025-02-18T17:19:38.987Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:38.987Z] Checked if tokens are valid: true, expires at: 1739902425466
+[debug] [2025-02-18T17:19:38.987Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com [none]
+[debug] [2025-02-18T17:19:38.987Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/filesharing-d7c31
+[debug] [2025-02-18T17:19:40.826Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com 200
+[debug] [2025-02-18T17:19:40.826Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/filesharing-d7c31/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
